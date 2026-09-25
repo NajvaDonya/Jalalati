@@ -1,3 +1,5 @@
+import { asset } from "./asset";
+
 export type Language = "fa" | "en" | "ar";
 
 export type TranslationKey =
@@ -32,8 +34,8 @@ export const catalogByLanguage = {
 } as const;
 
 export function getCatalogUrl(lang: Language): string {
-  if (lang === "ar") return catalogByLanguage.ar;
-  return catalogByLanguage.en;
+  if (lang === "ar") return asset(catalogByLanguage.ar);
+  return asset(catalogByLanguage.en);
 }
 
 export function getDir(lang: Language): "rtl" | "ltr" {

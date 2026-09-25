@@ -1,5 +1,6 @@
 "use client";
 
+import { asset } from "@/lib/asset";
 import { MAPS_URL, TEL_MOBILE, TEL_PHONE } from "@/lib/i18n";
 import { ActionButtons } from "./ActionButtons";
 import { BrandMark } from "./BrandMark";
@@ -16,7 +17,7 @@ export function DigitalCard() {
       <div className="jc-stage">
         <div
           className="absolute inset-0 bg-cover bg-center"
-          style={{ backgroundImage: "url('/backgrounds/jalalati-mock.jpg')" }}
+          style={{ backgroundImage: `url('${asset("/backgrounds/jalalati-mock.jpg")}')` }}
         />
 
         {/* Covers the language labels painted into the artwork so only the live switcher remains. */}
