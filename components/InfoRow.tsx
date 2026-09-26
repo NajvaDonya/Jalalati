@@ -7,9 +7,10 @@ type InfoRowProps = {
   href?: string;
   external?: boolean;
   divider?: boolean;
+  valueLtr?: boolean;
 };
 
-export function InfoRow({ icon, label, value, href, external, divider }: InfoRowProps) {
+export function InfoRow({ icon, label, value, href, external, divider, valueLtr }: InfoRowProps) {
   const content = (
     <div
       className={`flex items-center gap-[4.7cqw] py-[3.2cqw] ${
@@ -23,7 +24,7 @@ export function InfoRow({ icon, label, value, href, external, divider }: InfoRow
       <div className="min-w-0 text-start">
         <div className="text-[3.2cqw] leading-[1.5] text-white/45">{label}</div>
         <div className="text-[4.4cqw] leading-[1.5] font-medium break-words text-white/95">
-          {value}
+          {valueLtr ? <bdi dir="ltr">{value}</bdi> : value}
         </div>
       </div>
     </div>

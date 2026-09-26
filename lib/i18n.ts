@@ -44,10 +44,10 @@ export function getDir(lang: Language): "rtl" | "ltr" {
 
 export const MAPS_URL =
   "https://www.google.com/maps/search/?api=1&query=" +
-  encodeURIComponent("Tehran, Laleh Zar St., No. 522, 1st Floor, Unit 51");
+  encodeURIComponent("Unit51, First floor, No 522, Lalehzarnou Street");
 
-export const TEL_PHONE = "tel:02133923920";
-export const TEL_MOBILE = "tel:09123879089";
+export const TEL_PHONE = "tel:+982133923920";
+export const TEL_MOBILE = "tel:+989123879089";
 
 export const translations: Record<Language, Record<TranslationKey, string>> = {
   fa: {
@@ -55,8 +55,8 @@ export const translations: Record<Language, Record<TranslationKey, string>> = {
     companyLine1: "سیم و کابل",
     companyLine2: "جلالتی",
     description: "فروش انواع سیم و کابل ایرانی و خارجی",
-    phone: "۰۲۱۳۳۹۲۳۹۲۰",
-    mobile: "۰۹۱۲۳۸۷۹۰۸۹",
+    phone: "+۹۸۲۱۳۳۹۲۳۹۲۰",
+    mobile: "+۹۸۹۱۲۳۸۷۹۰۸۹",
     phoneLabel: "تلفن ثابت",
     mobileLabel: "همراه",
     addressLabel: "آدرس",
@@ -79,14 +79,14 @@ export const translations: Record<Language, Record<TranslationKey, string>> = {
     companyLine1: "Wire & Cable",
     companyLine2: "Jalalati",
     description: "Supplier of Iranian and International Wires & Cables",
-    phone: "02133923920",
-    mobile: "09123879089",
+    phone: "+982133923920",
+    mobile: "+989123879089",
     phoneLabel: "Office",
     mobileLabel: "Mobile",
     addressLabel: "Address",
-    address: "Tehran, Laleh Zar St., No. 522, 1st Floor, Unit 51",
-    addressLine1: "Tehran, Laleh Zar St., No. 522",
-    addressLine2: "1st Floor, Unit 51",
+    address: "Unit51, First floor, No 522, Lalehzarnou Street",
+    addressLine1: "Unit51, First floor, No 522",
+    addressLine2: "Lalehzarnou Street",
     call: "Call Us",
     directions: "Get Directions",
     catalog: "Catalog",
@@ -103,8 +103,8 @@ export const translations: Record<Language, Record<TranslationKey, string>> = {
     companyLine1: "أسلاك وكابلات",
     companyLine2: "جلالتي",
     description: "بيع مختلف أنواع الأسلاك والكابلات الإيرانية والأجنبية",
-    phone: "۰۲۱۳۳۹۲۳۹۲۰",
-    mobile: "۰۹۱۲۳۸۷۹۰۸۹",
+    phone: "+٩٨٢١٣٣٩٢٣٩٢٠",
+    mobile: "+٩٨٩١٢٣٨٧٩٠٨٩",
     phoneLabel: "الهاتف",
     mobileLabel: "الجوال",
     addressLabel: "العنوان",

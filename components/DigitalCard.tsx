@@ -48,12 +48,14 @@ export function DigitalCard() {
                   label={t("phoneLabel")}
                   value={t("phone")}
                   href={TEL_PHONE}
+                  valueLtr
                 />
                 <InfoRow
                   icon={<MobileIcon />}
                   label={t("mobileLabel")}
                   value={t("mobile")}
                   href={TEL_MOBILE}
+                  valueLtr
                   divider
                 />
                 <InfoRow
